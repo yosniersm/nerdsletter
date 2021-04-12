@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"email\": \"yos29@gmail.com\",\n  \"firstName\": \"Yosnier\",\n  \"gender\": \"Male\",\n  \"flagForConsent\": true,\n  \"newsletterId\": \"campaign-1\",\n  \"dateOfBirth\": \"2020-08-22\"\n}",
+					"raw": "{\n  \"email\": \"yos2@gmail.com\",\n  \"firstName\": \"Yosnier\",\n  \"gender\": \"Male\",\n  \"flagForConsent\": true,\n  \"newsletterId\": \"campaign-1\",\n  \"dateOfBirth\": \"2020-08-22\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -20,12 +20,11 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/subscriptions",
+					"raw": "http://localhost/subscriptions",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
 					"path": [
 						"subscriptions"
 					]
@@ -51,12 +50,11 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/subscriptions",
+					"raw": "http://localhost/subscriptions",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
 					"path": [
 						"subscriptions"
 					]
@@ -82,12 +80,11 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/subscriptions/:id",
+					"raw": "http://localhost/subscriptions/:id",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
 					"path": [
 						"subscriptions",
 						":id"
@@ -95,7 +92,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": "60732b7ebdc249592f6d542e"
+							"value": "6074ce2deb5510000a80c31c"
 						}
 					]
 				}
@@ -123,12 +120,11 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/subscriptions/:id",
+					"raw": "http://localhost/subscriptions/:id",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
 					"path": [
 						"subscriptions",
 						":id"
@@ -136,7 +132,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": "60732d7196c63b59d3746a61"
+							"value": "6074ce5ceb5510000a80c31d"
 						}
 					]
 				}
