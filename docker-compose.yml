@@ -6,6 +6,14 @@ networks:
 # docker-compose.yml
 # Add this top-level entry
 services:
+  nginx:
+    build: ./nginx
+    ports:
+        - "80:80"
+    depends_on:
+      - public
+    networks: 
+      - nerdsletter-network
   db:
     image: mongo
     container_name: mongodb
@@ -18,8 +26,6 @@ services:
     # build: 
     #   context: ./nerdsletter-public
     #   dockerfile: ./public/Dockerfile
-    ports:
-      - '80:3000'
     networks:
       - nerdsletter-network
     environment: 

@@ -8,6 +8,18 @@ data source.
 
 ## Getting started
 
+### Prerequisites
+
+| Framework/Tools | Version    |
+| ----------------| -----------|
+| Node            | >=14.XX.XX |
+| NPM             | >=6.XX.XX  |
+| Docker          | >=19.XX.XX |
+
+
+
+### Instructions
+
 Follow these instructions to get a demonstration nerdsletter system up and
 running.
 
