@@ -1,0 +1,47 @@
+version: '3.7'
+
+networks:
+  nerdsletter-network:
+
+# docker-compose.yml
+# Add this top-level entry
+services:
+  db:
+    image: mongo
+    container_name: mongodb
+    networks:
+      - nerdsletter-network
+    
+  public:
+    image: yosamac/nerdsletter-public
+    container_name: public
+    networks:
+      - nerdsletter-network
+    environment: 
+      - SUBSCRIPTION_MESH_HOST=subscription
+      - SUBSCRIPTION_MESH_PORT=4001
+    links: 
+      - subscription
+
+  subscription:
+    image:  yosamac/nerdsletter-subscription
+    container_name: subscription
+    networks:
+      - nerdsletter-network
+    ports:
+      - '50051:50051'
+    environment:
+      - MONGODB_URI=mongodb://db/nerdsletter_subscription
+      - LOG_LEVEL=DEBUG
+      - EMAIL_MESH_HOST=email
+      - EMAIL_MESH_PORT=4002
+    depends_on:
+      - db
+    links:
+      - email
+  
+  email:
+    image: yosamac/nerdsletter-email
+    container_name: email
+    networks:
+      - nerdsletter-network
