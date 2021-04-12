@@ -15,9 +15,9 @@ services:
   public:
     image: nerdsletter-public #  from docker hub: yosamac/nerdsletter-public
     container_name: public
-    build: 
-      context: ./nerdsletter-public
-      dockerfile: ./public/Dockerfile
+    # build: 
+    #   context: ./nerdsletter-public
+    #   dockerfile: ./public/Dockerfile
     ports:
       - '80:3000'
     networks:
@@ -31,13 +31,13 @@ services:
   subscription:
     image:  nerdsletter-subscription # from docker hub: yosamac/nerdsletter-subscription
     container_name: subscription
-    build: 
-      context: ./subscription
-      dockerfile: ./nerdsletter-subscription/Dockerfile
+    # build: 
+    #   context: ./subscription
+    #   dockerfile: ./nerdsletter-subscription/Dockerfile
     networks:
       - nerdsletter-network
     environment:
-      - MONGODB_URI=mongodb://db/nerdsletter_subscription
+      - MONGODB_URI=mongodb://db:27017/nerdsletter_subscription
       - LOG_LEVEL=DEBUG
       - EMAIL_MESH_HOST=email
       - EMAIL_MESH_PORT=4002
@@ -49,8 +49,8 @@ services:
   email:
     image: nerdsletter-email  # from docker hub: yosamac/nerdsletter-email
     container_name: email
-    build: 
-      context: ./email
-      dockerfile: ./nerdsletter-email/Dockerfile
+    # build: 
+    #   context: ./email
+    #   dockerfile: ./nerdsletter-email/Dockerfile
     networks:
       - nerdsletter-network

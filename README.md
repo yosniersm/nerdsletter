@@ -26,7 +26,13 @@ running.
   $ ./nerdsletter/npm-install.sh`
   ```
 
-4. Start up the system by running the local development environment
+4. Build images every mircro-service
+  ```
+  $ cd <micro-service>`
+  $ npm run build:pro-image`
+  ```
+
+5. Start up the system by running the local development environment
   using ([docker-compose](https://docs.docker.com/compose/)).
   ```
   $ docker-compose up
