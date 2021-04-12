@@ -1,6 +1,4 @@
-# The nerdsletter microservices is a subscription system
-
-## Nerdsletter
+# Nerdsletter
 
 The nerdsletter system is a little subscription system
 for [Node.js](//nodejs.org) modules, using
