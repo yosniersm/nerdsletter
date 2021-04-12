@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "db143997-26e1-4c6e-9626-f9871614109c",
+		"name": "Nerdsletter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create new subscription",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"yos29@gmail.com\",\n  \"firstName\": \"Yosnier\",\n  \"gender\": \"Male\",\n  \"flagForConsent\": true,\n  \"newsletterId\": \"campaign-1\",\n  \"dateOfBirth\": \"2020-08-22\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/subscriptions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"subscriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all subscriptions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"yosamac@gmail.com\",\n  \"firstName\": \"Yosnier\",\n  \"gender\": \"Male\",\n  \"flagForConsent\": true,\n  \"newsletterId\": \"campaign-1\",\n  \"dateOfBirth\": \"2020-08-22\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/subscriptions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"subscriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get subscription",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"yosamac@gmail.com\",\n  \"firstName\": \"Yosnier\",\n  \"gender\": \"Male\",\n  \"flagForConsent\": true,\n  \"newsletterId\": \"campaign-1\",\n  \"dateOfBirth\": \"2020-08-22\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/subscriptions/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"subscriptions",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "60732b7ebdc249592f6d542e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel subscription",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "id",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"yosamac@gmail.com\",\n  \"firstName\": \"Yosnier\",\n  \"gender\": \"Male\",\n  \"flagForConsent\": true,\n  \"newsletterId\": \"campaign-1\",\n  \"dateOfBirth\": \"2020-08-22\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/subscriptions/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"subscriptions",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "60732d7196c63b59d3746a61"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

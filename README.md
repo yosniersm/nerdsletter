@@ -18,18 +18,18 @@ running.
 
 2. Checkout all the microservice repositories.
   ```
-  $ ./nerdsletter/git-clone-all.sh`
+  $ ./nerdsletter/git-clone-all.sh
   ```
   
 3. Install all the modules.
   ```
-  $ ./nerdsletter/npm-install.sh`
+  $ ./nerdsletter/npm-install.sh
   ```
 
 4. Build images every mircro-service
   ```
-  $ cd <micro-service>`
-  $ npm run build:pro-image`
+  $ cd <micro-service>
+  $ npm run build:pro-image
   ```
 
 5. Start up the system by running the local development environment
@@ -38,11 +38,26 @@ running.
   $ docker-compose up
   ```
 
+6. Go to http://localhost/api
+
+
+## API v1 info
+
+### Swagger
+
+The API can be used with the path: 
+[API V1](http://localhost:80/api)
+
+
+## Deploy in Kubernetes
+Work in progress
+
+
 ## List of repositories
 
-* [nerdsletter-subscription](//github.com/yosamac/nerdsletter-subscription)
-* [nerdsletter-email](//github.com/yosamac/nerdsletter-email)
-* [nerdsletter-public](//github.com/yosamac/nerdsletter-public)
+* [nerdsletter-subscription](https://github.com/yosamac/nerdsletter-subscription)
+* [nerdsletter-email](https://github.com/yosamac/nerdsletter-email)
+* [nerdsletter-public](https://github.com/yosamac/nerdsletter-public)
 
 
 

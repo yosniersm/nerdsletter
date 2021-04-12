@@ -13,7 +13,7 @@ services:
       - nerdsletter-network
     
   public:
-    image: nerdsletter-public #  from docker hub: yosamac/nerdsletter-public
+    image: nerdsletter-public:1.0.0 #  from docker hub: yosamac/nerdsletter-public
     container_name: public
     # build: 
     #   context: ./nerdsletter-public
@@ -29,7 +29,7 @@ services:
       - subscription
 
   subscription:
-    image:  nerdsletter-subscription # from docker hub: yosamac/nerdsletter-subscription
+    image:  nerdsletter-subscription:1.0.0 # from docker hub: yosamac/nerdsletter-subscription
     container_name: subscription
     # build: 
     #   context: ./subscription
@@ -47,7 +47,7 @@ services:
       - email
   
   email:
-    image: nerdsletter-email  # from docker hub: yosamac/nerdsletter-email
+    image: nerdsletter-email:1.0.0  # from docker hub: yosamac/nerdsletter-email
     container_name: email
     # build: 
     #   context: ./email
