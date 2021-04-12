@@ -37,8 +37,8 @@ running.
 ## List of repositories
 
 * [nerdsletter-subscription](//github.com/yosamac/nerdsletter-subscription)
-* [nerdsletter-email](//github.com/yosamac/nerdletter-email)
-* [nerdsletter-public](//github.com/yosamac/nerdletter-public)
+* [nerdsletter-email](//github.com/yosamac/nerdsletter-email)
+* [nerdsletter-public](//github.com/yosamac/nerdsletter-public)
 
 
 
